@@ -1,13 +1,13 @@
 # Aviator Simulation & Strategy Analyzer (Aviator 博奕模擬與分析器)
 
-> 一個整合了 **遊戲前端 (Playable Client)** 與 **高頻交易模擬後端 (High-Frequency Simulator)** 的完整專案。
+> 一個整合了 **遊戲前端 (Playable Client)** 與 **高頻交易模擬後端 (High-Frequency Simulator)** 的demo專案。
 > **核心技術：** C# 數學模型模擬 / ScriptableObject 策略模組 / 蒙地卡羅模擬 (Monte Carlo) / CSV 數據分析
 
 ---
 
 ### 📊 專案簡介 (Introduction)
 本專案重現了經典的 Crash Game (Aviator) 玩法，並在此基礎上開發了一套 **策略回測工具**。
-一般的博奕遊戲開發僅關注畫面表現，但本專案更側重於 **數值驗證** 與 **系統穩定性分析**。透過內建的模擬器，開發者可以驗證不同下注策略（如馬丁格爾）在 10 萬次賽局後的資金曲線與破產機率。
+一般的博奕遊戲開發僅關注畫面表現，但本專案更側重於 **數值驗證** 與 **系統穩定性分析**。透過內建的模擬器，開發者可以驗證不同下注策略（如馬丁格爾）在數萬次賽局後的玩家資金曲線與破產機率。
 
 透過這套工具，開發者或策劃人員可以：
 1.  **自定義測試環境**：設定測試次數（如 10,000 次）、基礎賠率曲線。
@@ -31,10 +31,13 @@
 *可配置模擬次數、策略模組與參數*
 
 ---
-| 📈 數據視覺化 (Data Viz) | 🧠 策略模組 (Modular AI) |
-| :---: | :---: |
-| ![ExcelChart](https://via.placeholder.com/400x225?text=Excel+Data+Chart) | ![SO_Architecture](https://via.placeholder.com/400x225?text=ScriptableObject+Assets) |
-| *匯出 CSV 進行資金回撤分析* | *透過 ScriptableObject 抽換下注邏輯* |
+
+ ## 數據視覺化 (Data Viz)  
+
+<img width="677" height="440" alt="image" src="https://github.com/user-attachments/assets/6c5f628e-65a6-4617-b797-17c548d3330b" />
+
+ *將匯出 CSV 放入excel中進行資金回撤分析* 
+
 ---
 
 ###  核心技術實作 (Technical Implementation)
@@ -70,7 +73,7 @@ private float GenerateMultiplier()
 
 效能優化： 使用 StringBuilder 處理大量字串拼接，並採用批次寫入 CSV 的方式，能在數秒內完成 100,000 場賽局模擬。
 
-風險控管指標： 系統會自動計算 最大回撤 (Max Drawdown)，這是評估策略風險（莊家是否會被擊穿資金池）的關鍵指標。
+風險控管指標： 系統會自動計算 最大回撤 (Max Drawdown)，評估系統風險。
 
 ---
 
@@ -98,4 +101,4 @@ Alpha: 調整賭場優勢 (數值越大，高倍率越難出)。
 
 點擊 RunSimulation。
 
-前往 Assets/Data/ 資料夾查看生成的 .csv 報表。
+可前往 Assets/ 資料夾查看生成的 .csv 報表。
