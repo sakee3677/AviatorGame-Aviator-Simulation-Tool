@@ -1,11 +1,12 @@
 # Aviator Simulation & Strategy Analyzer (Aviator 博奕模擬與分析器)
 
 > 一個整合了 **遊戲前端 (Playable Client)** 與 **高頻交易模擬後端 (High-Frequency Simulator)** 的demo專案。
+> 
 > **核心技術：** C# 數學模型模擬 / ScriptableObject 策略模組 / 蒙地卡羅模擬 (Monte Carlo) / CSV 數據分析
 
 ---
 
-### 📊 專案簡介 (Introduction)
+###  專案簡介 (Introduction)
 本專案重現了經典的 Crash Game (Aviator) 玩法，並在此基礎上開發了一套 **策略回測工具**。
 一般的博奕遊戲開發僅關注畫面表現，但本專案更側重於 **數值驗證** 與 **系統穩定性分析**。透過內建的模擬器，開發者可以驗證不同下注策略（如馬丁格爾）在數萬次賽局後的玩家資金曲線與破產機率。
 
@@ -15,7 +16,7 @@
 3.  **分析營收數據**：計算玩家勝率 (RTP)、最大回撤 (Max Drawdown) 以及莊家優勢 (House Edge)。
 4.  **視覺化報表**：自動導出 CSV，透過 Excel 進行圖表分析。
 
-### 📸 功能展示 (Showcase)
+###  功能展示 (Showcase)
 
  ## 遊戲本體 (Game Client) 
  <img width="780" height="428" alt="image" src="https://github.com/user-attachments/assets/0009f253-f803-4f45-9951-f670f8a06dfe" />
@@ -101,4 +102,5 @@ Alpha: 調整賭場優勢 (數值越大，高倍率越難出)。
 
 點擊 RunSimulation。
 
-可前往 Assets/ 資料夾查看生成的 .csv 報表。
+可前往 Assets/ 資料夾查看生成的 .csv 檔案 
+匯入https://docs.google.com/spreadsheets/d/1qHLrjkZV5cN15PmwWHaPb6pbaLb04_jKlgkVeF52ciU/edit?usp=sharing 將資料匯入RawData工作表，並在dashboard查看圖表。
