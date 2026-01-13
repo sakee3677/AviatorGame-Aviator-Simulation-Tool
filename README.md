@@ -43,7 +43,7 @@
 
 ###  核心技術實作 (Technical Implementation)
 
-[AviatorStateManager.cs](./Assets/Aviator/AviatorStateManager.cs)
+[AviatorStateManager.cs](./Aviator/AviatorStateManager.cs)
 #### 1. 數學模型與隨機性 (Math & RNG)
 為了模擬真實賭場的「長尾效應」(大倍率稀有，小倍率常見)，我不使用一般的 `Random.Range`，而是實作了 **Pareto Distribution (帕累托分布)** 算法。
 
@@ -71,7 +71,7 @@ private float GenerateMultiplier()
 這允許我快速切換測試 馬丁格爾 (Martingale)、反馬丁 或 隨機下注 等策略。
 
 #### 4. 高效大數據模擬 (High-Performance Simulation)
-[AviatorTester.cs](./Assets/Aviator/Simulator/AviatorTester.cs)
+[AviatorTester.cs](./Aviator/Simulator/AviatorTester.cs)
 模擬器捨棄了 Time.deltaTime 的逐幀執行，改用純數值運算。
 
 效能優化： 使用 StringBuilder 處理大量字串拼接，並採用批次寫入 CSV 的方式，能在數秒內完成 100,000 場賽局模擬。
