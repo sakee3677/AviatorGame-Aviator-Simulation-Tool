@@ -19,7 +19,7 @@
 
 | 🎮 遊戲本體 (Game Client) | ⚙️ 策略模擬器 (Simulator) |
 | :---: | :---: |
-| ![Gameplay](https://via.placeholder.com/400x225?text=Game+Loop+GIF) | ![Simulator](https://via.placeholder.com/400x225?text=Inspector+Strategy+Setup) |
+| ![Gameplay]<img width="672" height="389" alt="image" src="https://github.com/user-attachments/assets/71c80a84-c4a5-40fe-b983-d750de372362" />| ![Simulator] |
 | *實作指數攀升與狀態機控制流程* | *可配置模擬次數、策略模組與參數* |
 
 | 📈 數據視覺化 (Data Viz) | 🧠 策略模組 (Modular AI) |
@@ -28,7 +28,7 @@
 | *匯出 CSV 進行資金回撤分析* | *透過 ScriptableObject 抽換下注邏輯* |
 ---
 
-### 🛠️ 核心技術實作 (Technical Implementation)
+###  核心技術實作 (Technical Implementation)
 
 #### 1. 數學模型與隨機性 (Math & RNG)
 為了模擬真實賭場的「長尾效應」(大倍率稀有，小倍率常見)，我不使用一般的 `Random.Range`，而是實作了 **Pareto Distribution (帕累托分布)** 算法。
@@ -45,7 +45,7 @@ private float GenerateMultiplier()
 }
 ```
 #### 2. 狀態機架構 (State Machine Pattern)
-在遊戲本體 (AviatorStateManager) 中，我使用狀態機來嚴格控管遊戲流程，確保資金扣除與結算邏輯不會因為網路延遲或玩家連點而發生錯誤。
+在遊戲本體 (AviatorStateManager) 中，我使用狀態機來控管遊戲流程，確保資金扣除與結算邏輯不會因為網路延遲或玩家連點而發生錯誤。
 
 流程： PrepareState (下注階段) → FlyingState (計算倍率/即時收網) → ResultState (結算與清理)。
 
@@ -63,13 +63,10 @@ private float GenerateMultiplier()
 
 風險控管指標： 系統會自動計算 最大回撤 (Max Drawdown)，這是評估策略風險（莊家是否會被擊穿資金池）的關鍵指標。
 
-🔗 模擬邏輯閱覽： AviatorTester.cs - 包含蒙地卡羅模擬迴圈與 CSV 輸出邏輯
-
 ---
 
 ###  如何使用 (How to Use)
 
-如何使用 (How to Use)
 遊玩模式
 進入 GameScene。
 
@@ -78,6 +75,8 @@ private float GenerateMultiplier()
 在飛機飛走前按下「兌現 (Cash Out)」。
 
 測試模式 (Data Analysis)
+需使用unity開啟專案
+
 進入 SimulatorScene 並選中 AviatorTester 物件。
 
 設定參數：
