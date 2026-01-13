@@ -72,7 +72,7 @@ private float GenerateMultiplier()
 
 #### 4. 高效大數據模擬 (High-Performance Simulation)
 [AviatorTester.cs](./Assets/Scripts/Aviator/Simulator/AviatorTester.cs)
-模擬器 (AviatorTester.cs) 捨棄了 Time.deltaTime 的逐幀執行，改用純數值運算。
+模擬器捨棄了 Time.deltaTime 的逐幀執行，改用純數值運算。
 
 效能優化： 使用 StringBuilder 處理大量字串拼接，並採用批次寫入 CSV 的方式，能在數秒內完成 100,000 場賽局模擬。
 
