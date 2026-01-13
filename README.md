@@ -27,7 +27,8 @@
 
  ## 策略模擬器 (Simulator) 
 
- <img width="1646" height="692" alt="image" src="https://github.com/user-attachments/assets/94ed4f68-594d-4efc-b913-1d6d80b1bb2c" />
+ <img width="1610" height="790" alt="image" src="https://github.com/user-attachments/assets/09f1eb30-c4c9-4113-8e9f-b35cae5069ac" />
+
  
 *可配置模擬次數、策略模組與參數*
 
