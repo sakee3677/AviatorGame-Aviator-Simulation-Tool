@@ -18,14 +18,15 @@
 ### 📸 功能展示 (Showcase)
 
  ## 遊戲本體 (Game Client) 
-| ![Gameplay] <img width="780" height="428" alt="image" src="https://github.com/user-attachments/assets/0009f253-f803-4f45-9951-f670f8a06dfe" />|
+ ![Gameplay] <img width="780" height="428" alt="image" src="https://github.com/user-attachments/assets/0009f253-f803-4f45-9951-f670f8a06dfe" />
+ 
 *實作指數攀升與狀態機控制流程*
 
 ---
 
  ## 策略模擬器 (Simulator) 
 
-| ![Simulator] <img width="1646" height="692" alt="image" src="https://github.com/user-attachments/assets/94ed4f68-594d-4efc-b913-1d6d80b1bb2c" />
+ ![Simulator] <img width="1646" height="692" alt="image" src="https://github.com/user-attachments/assets/94ed4f68-594d-4efc-b913-1d6d80b1bb2c" />
 
 *可配置模擬次數、策略模組與參數*
 
