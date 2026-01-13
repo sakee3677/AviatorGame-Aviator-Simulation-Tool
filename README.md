@@ -19,7 +19,7 @@
 
 | 🎮 遊戲本體 (Game Client) | ⚙️ 策略模擬器 (Simulator) |
 | :---: | :---: |
-| ![Gameplay]<img width="672" height="389" alt="image" src="https://github.com/user-attachments/assets/71c80a84-c4a5-40fe-b983-d750de372362" />| ![Simulator] |
+| ![Gameplay]<img width="649" height="359" alt="image" src="https://github.com/user-attachments/assets/ed6fd4bc-9975-48c6-b100-b5fb5adf5ce3" />![Uploading image.png…]()| ![Simulator] |
 | *實作指數攀升與狀態機控制流程* | *可配置模擬次數、策略模組與參數* |
 
 | 📈 數據視覺化 (Data Viz) | 🧠 策略模組 (Modular AI) |
