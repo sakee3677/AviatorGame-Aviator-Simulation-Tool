@@ -18,7 +18,9 @@
 ### 📸 功能展示 (Showcase)
 
 |  遊戲本體 (Game Client) |
-實作指數攀升與狀態機控制流程
+
+*實作指數攀升與狀態機控制流程*
+
 | ![Gameplay] <img width="780" height="428" alt="image" src="https://github.com/user-attachments/assets/0009f253-f803-4f45-9951-f670f8a06dfe" />|
 
 ---
