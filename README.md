@@ -43,6 +43,7 @@
 
 ###  核心技術實作 (Technical Implementation)
 
+[AviatorStateManager.cs](./Assets/Scripts/Aviator/AviatorStateManager.cs)
 #### 1. 數學模型與隨機性 (Math & RNG)
 為了模擬真實賭場的「長尾效應」(大倍率稀有，小倍率常見)，我不使用一般的 `Random.Range`，而是實作了 **Pareto Distribution (帕累托分布)** 算法。
 
